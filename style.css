@@ -1,0 +1,155 @@
+* {
+  font-family: "Overpass", sans-serif;
+}
+.hide {
+  display: none;
+}
+
+body {
+  background-color: #141519;
+  margin: 0;
+}
+.result {
+  color: white;
+}
+
+.container {
+  margin: 7% auto;
+  min-height: 45vh;
+  width: 20vw;
+  padding: 30px;
+  background-color: #1f2630;
+  color: white;
+  border-radius: 25px;
+  position: relative;
+}
+
+.starImage {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #475059;
+}
+
+.container.text {
+  position: absolute;
+}
+.text p {
+  line-height: 20px;
+  font-size: 80%;
+}
+.container .numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.numbers .number {
+  bottom: 5px;
+  border-radius: 50%;
+  background-color: #475059;
+  padding: 5px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.number:hover {
+  box-shadow: 1px 1px 10px 1px #fc7613;
+  background-color: white;
+  color: black;
+  transition: background-color 1s ease, box-shadow 0.7s ease-in-out;
+}
+
+.number:focus-within{
+  box-shadow: 1px 1px 10px 1px #fc7613;
+  background-color: yellow;
+  color: black;
+
+}
+
+.container button {
+  display: inline-block;
+  border: none;
+  position: absolute;
+  border-radius: 14px;
+  bottom: 40px;
+  background-color: #fc7613;
+  padding: 10px;
+  width: 20vw;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 1px 1px 10px 1px #fc7613;
+  background-color: white;
+  color: black;
+  transition: background-color 1s ease, box-shadow 0.7s ease-in-out;
+}
+
+.attribution {
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  color: white;
+}
+.attribution a {
+  color: white;
+}
+
+.card-content-2 {
+  margin: 7% auto;
+  min-height: 45vh;
+  width: 20vw;
+  padding: 30px;
+  background-color: #1f2630;
+  color: white;
+  border-radius: 25px;
+  position: relative;
+}
+
+.card-content-2 img {
+  display: block;
+  margin: 10% 20%;
+  width: 49%;
+}
+
+.card-content-2 .result {
+  margin: 0 4%;
+  background-color: #475059;
+  text-align: center;
+  padding: 1%;
+  color: #fc7613;
+  border-radius: 50px;
+  width: 90%;
+}
+
+.card-content-2  h3{
+  text-align: center;
+}
+
+.card-content-2 .text{
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 75vw;
+  }
+
+  .card-content-2{
+    width: 75vw;
+  }
+  .attribution {
+    display: none;
+  }
+  .container button {
+    width: 70vw;
+  }
+}
